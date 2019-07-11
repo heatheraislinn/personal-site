@@ -1,0 +1,1058 @@
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap');
+
+// COLORS
+$brand-white: #ffffffab;
+$brand-black: #333;
+$subheader: #b9b9b9;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+// HEADER
+.header {
+    padding: 0 6rem;
+    background-color: $brand-black;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: $brand-white;
+        font-family: 'Cutive Mono', monospace;
+    }
+
+    &__links {
+        display: flex;
+        list-style: none;
+        font-size: 1.4rem;
+    }
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+        a {
+            color: $brand-white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+
+            svg.svg-inline--fa.fa-w-16 {
+                width: 2em;
+            }
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+// HERO
+.hero {
+    width: 45%;
+    margin: auto;
+    padding: 10rem 0;
+
+    &__title {
+        font-size: 4rem;
+        margin-bottom: -1.5rem;
+        font-family: 'Cutive Mono', monospace;
+    }
+
+    &__description {
+        font-size: 2.5rem;
+        color: $subheader;
+        font-family: 'Cutive Mono', monospace;
+        line-height: 1.1;
+    }
+
+    &__paragraph {
+        font-size: 1.4rem;
+        margin-top: 2rem;
+    }
+}
+
+// ADLANTERN
+.adlantern {
+    background-image: linear-gradient(to bottom right, #34679bdb 40%, #34679b 40%);
+    padding: 1rem 6rem;
+
+    &__items {
+        display: flex;
+        list-style: none;
+    }
+
+    &__image {
+        margin-top: -2rem;
+
+        &-1 {
+            width: 11rem;
+            margin-top: 4.5rem;
+            margin-left: -8rem;
+        }
+
+        &-2 {
+            width: 40rem;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            width: 20rem;
+            margin-bottom: -2rem;
+            margin-top: -2rem;
+        }
+
+        &-text {
+            font-size: 1.6rem;
+            color: $brand-white;
+            margin-left: 1.8rem;
+        }
+    }
+
+    &__see-more {
+        color: $brand-white;
+        margin-top: 1rem;
+        margin-left: 1.7rem;
+        cursor: pointer;
+
+        svg.svg-inline--fa {
+            width: 2em;
+            height: 2em;
+        }
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+// ADLANTERN EXPANDED
+.adlantern-expanded {
+    display: none;
+    padding: 6rem;
+    background-color: #f3f3f3;
+    -moz-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
+
+    &__items {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            margin-left: 4rem;
+        }
+    }
+
+    &__card-image {
+        div {
+            height: 22rem;
+            width: 22rem;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+            transition: all .2s;
+
+            &:hover {
+                transform: translateY(-3px);
+            }
+        }
+
+        &-1 {
+            background-image: url('../images/adlantern-signup.png');
+            background-size: cover;
+            background-position: center;
+        }
+        &-2 {
+            background-image: url('../images/adlantern-marketing.png');
+            background-size: cover;
+        }
+        &-3 {
+            background-image: url('../images/adlantern-calendar.png');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        
+        &-item {
+            font-size: 1.2rem;
+            color: $brand-black;
+            text-transform: uppercase;
+
+            &:nth-child(3n) {
+                margin-bottom: 3rem;
+            }
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $brand-black;
+            border: 2px solid $brand-black;
+            display: block;
+            text-align: center;
+            padding: .5rem 0;
+            margin-top: .5rem;
+            transition: all .2s;
+
+            &:hover {
+                background-color: $brand-black;
+                color: #f3f3f3;
+            }
+        }
+    }
+}
+
+// WE'RE HISTORY
+.were-history {
+    margin-top: 1rem;
+    background-image: linear-gradient(to bottom right, #f9f9f9 40%, #ececec 40%);
+    padding: 1rem 6rem;
+
+    &__items {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            width: 30rem;
+        }
+
+        &-text {
+            font-size: 1.6rem;
+            color: #333333ab;
+            margin-right: 1rem;
+            text-align: right;
+        }
+    }
+
+    &__see-more {
+        color: #333333ab;
+        margin-top: 1rem;
+        text-align: right;
+        margin-right: .8rem;
+        cursor: pointer;
+
+        svg.svg-inline--fa {
+            width: 2em;
+            height: 2em;
+        }
+
+        &:hover {
+            color: $brand-black;
+        }
+    }
+
+    &__image {
+        margin-top: -4rem;
+
+        img {
+            width: 35rem;
+        }
+    }
+}
+
+// WERE HISTORY EXPANDED
+.were-history-expanded {
+    display: none;
+    padding: 6rem;
+    background-color: #f3f3f3;
+    -moz-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
+
+    &__items {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            margin-left: 4rem;
+        }
+    }
+
+    &__card-image {
+        div {
+            height: 22rem;
+            width: 22rem;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+            transition: all .2s;
+
+            &:hover {
+                transform: translateY(-3px);
+            }
+        }
+
+        &-1 {
+            background-image: url('../images/wh-section.png');
+            background-size: cover;
+            background-position: center;
+        }
+        &-2 {
+            background-image: url('../images/wh-footer.png');
+            background-size: cover;
+            background-position: center;
+        }
+        &-3 {
+            background-image: url('../images/wh-magazine.png');
+            background-size: contain;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        
+        &-item {
+            font-size: 1.2rem;
+            color: $brand-black;
+            text-transform: uppercase;
+            text-align: right;
+
+            &:nth-child(4n) {
+                margin-bottom: 3rem;
+            }
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $brand-black;
+            border: 2px solid $brand-black;
+            display: block;
+            text-align: center;
+            padding: .5rem 0;
+            margin-top: .5rem;
+            transition: all .2s;
+
+            &:hover {
+                background-color: $brand-black;
+                color: #f3f3f3;
+            }
+        }
+    }
+}
+
+// RANNKO
+.rannko {
+    margin-top: 1rem;
+    background-image: linear-gradient(to bottom right, #1d61ecdb 40%, #1d61ec 40%);
+    padding: 1rem 6rem;
+
+    &__items {
+        display: flex;
+        list-style: none;
+    }
+
+    &__image {
+        margin-top: -2rem;
+
+        img {
+            width: 40rem;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            width: 20rem;
+            margin-bottom: -.5rem;
+        }
+
+        &-text {
+            font-size: 1.6rem;
+            color: $brand-white;
+            margin-left: .8rem;
+        }
+    }
+
+    &__see-more {
+        color: $brand-white;
+        margin-top: 1rem;
+        margin-left: .8rem;
+        cursor: pointer;
+
+        svg.svg-inline--fa {
+            width: 2em;
+            height: 2em;
+        }
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+// RANNKO EXPANDED
+.rannko-expanded {
+    display: none;
+    padding: 6rem;
+    background-color: #f3f3f3;
+    -moz-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
+
+    &__items {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            margin-left: 4rem;
+        }
+    }
+
+    &__card-image {
+        div {
+            height: 22rem;
+            width: 22rem;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+            transition: all .2s;
+
+            &:hover {
+                transform: translateY(-3px);
+            }
+        }
+
+        &-1 {
+            background-image: url('../images/adlantern-signup.png');
+            background-size: cover;
+            background-position: center;
+        }
+        &-2 {
+            background-image: url('../images/adlantern-marketing.png');
+            background-size: cover;
+        }
+        &-3 {
+            background-image: url('../images/adlantern-calendar.png');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        
+        &-item {
+            font-size: 1.2rem;
+            color: $brand-black;
+            text-transform: uppercase;
+
+            &:nth-child(3n) {
+                margin-bottom: 3rem;
+            }
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $brand-black;
+            border: 2px solid $brand-black;
+            display: block;
+            text-align: center;
+            padding: .5rem 0;
+            margin-top: .5rem;
+            transition: all .2s;
+
+            &:hover {
+                background-color: $brand-black;
+                color: #f3f3f3;
+            }
+        }
+    }
+}
+
+// DHM
+.dhm {
+    margin-top: 1rem;
+    background-image: linear-gradient(to bottom right, #f9f9f9 40%, #ececec 40%);
+    padding: 1rem 6rem;
+
+    &__items {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+    }
+    
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &-text {
+            font-size: 1.6rem;
+            color: #333333ab;
+            text-align: right;
+        }
+    }
+
+    &__see-more {
+        color: #333333ab;
+        margin-top: 1rem;
+        text-align: right;
+        cursor: pointer;
+
+        svg.svg-inline--fa {
+            width: 2em;
+            height: 2em;
+        }
+
+        &:hover {
+            color: $brand-black;
+        }
+    }
+
+    &__title {
+        font-size: 2.8rem;
+        color: $brand-black;
+        margin-bottom: -.5rem;
+    }
+
+    &__image {
+        margin-top: -2rem;
+
+        img {
+            width: 35rem;
+            border: 4px solid #333;
+            padding: 2rem;
+            background-color: #fff;
+            transform: rotate(3deg);
+            margin-left: 4rem;
+        }
+    }
+}
+
+// DHM EXPANDED
+.dhm-expanded {
+    display: none;
+    padding: 6rem;
+    background-color: #f3f3f3;
+    -moz-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
+
+    &__items {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            margin-left: 4rem;
+        }
+    }
+
+    &__card-image {
+        div {
+            height: 22rem;
+            width: 22rem;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+            transition: all .2s;
+
+            &:hover {
+                transform: translateY(-3px);
+            }
+        }
+
+        &-1 {
+            background-image: url('../images/dhm-44panel.jpg');
+            background-size: cover;
+        }
+        &-2 {
+            background-image: url('../images/dhm-halloween.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        &-3 {
+            background-image: url('../images/dhm-book.jpg');
+            background-size: cover;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        
+        &-item {
+            font-size: 1.2rem;
+            color: $brand-black;
+            text-transform: uppercase;
+            text-align: right;
+
+        }
+    }
+}
+
+// ICED TEA & SUNSHINE
+.iced-tea {
+    margin-top: 1rem;
+    background-image: linear-gradient(to bottom right, #81dfe1db 40%, #81dfe1 40%);
+    padding: 1rem 6rem;
+
+    &__items {
+        display: flex;
+        list-style: none;
+    }
+
+    &__image {
+        margin-top: -2rem;
+
+        img {
+            width: 22rem;
+            border: 4px solid $brand-black;
+            transform: rotate(-3deg);
+            margin-right: 6rem;
+        }
+    }
+
+    &__title {
+        font-size: 2.8rem;
+        color: #fff;
+        margin-bottom: -.5rem;
+
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &-text {
+            font-size: 1.7rem;
+            color: #fff;
+        }
+    }
+
+    &__see-more {
+        color: #fff;
+        margin-top: 1rem;
+        cursor: pointer;
+
+        svg.svg-inline--fa {
+            width: 2em;
+            height: 2em;
+        }
+
+        &:hover {
+            color: $brand-white;
+        }
+    }
+}
+
+// ICED TEA & SUNSHINE EXPANDED
+.iced-tea-expanded {
+    display: none;
+    padding: 6rem;
+    background-color: #f3f3f3;
+    -moz-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
+
+    &__items {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            margin-left: 4rem;
+        }
+    }
+
+    &__card-image {
+        div {
+            height: 22rem;
+            width: 22rem;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+            transition: all .2s;
+
+            &:hover {
+                transform: translateY(-3px);
+            }
+        }
+
+        &-1 {
+            background-image: url('../images/its-poster.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        &-2 {
+            background-image: url('../images/its-logo.jpg');
+            background-size: cover;
+        }
+        &-3 {
+            background-image: url('../images/its-shirt.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        
+        &-item {
+            font-size: 1.2rem;
+            color: $brand-black;
+            text-transform: uppercase;
+
+            &:nth-child(3n) {
+                margin-bottom: 3rem;
+            }
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $brand-black;
+            border: 2px solid $brand-black;
+            display: block;
+            text-align: center;
+            padding: .5rem 0;
+            margin-top: .5rem;
+            transition: all .2s;
+
+            &:hover {
+                background-color: $brand-black;
+                color: #f3f3f3;
+            }
+        }
+    }
+}
+
+// CHAT
+.chat {
+    padding: 6rem;
+    text-align: center;
+
+    &__header {
+        font-family: 'Cutive Mono', monospace;
+        font-size: 4rem;
+        margin-bottom: -1rem;
+    }
+
+    &__subheader {
+        font-family: 'Cutive Mono', monospace;
+        font-size: 2.5rem;
+        color: $subheader;
+        margin-bottom: 4rem;
+    }
+
+    &__contact {
+        &-link {
+            display: inline-block;
+            color: $brand-black;
+            border: 3px solid $brand-black;
+            padding: 4rem;
+            border-radius: 50%;
+            transition: all .2s;
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+
+            &:hover {
+                color: #fff;
+                background-color: $brand-black;
+            }
+
+            svg.svg-inline--fa {
+                width: 4em;
+                height: 4em;
+            }
+        }
+    }
+    
+}
+
+.footer {
+    background-color: $brand-black;
+    color: $brand-white;
+    padding: 6rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+// MEDIA QUERIES
+// IPAD PRO
+@media only screen and (max-width: 1024px) {
+    .adlantern-expanded,
+    .were-history-expanded,
+    .rannko-expanded,
+    .dhm-expanded,
+    .iced-tea-expanded {
+
+        &__items {
+            li {
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+// IPAD 
+@media only screen and (max-width: 768px) {
+    .hero {
+        padding: 8rem 0;
+    }
+
+    .adlantern {
+        &__description {
+            &-text {
+                line-height: 1.1;
+            }
+        }
+    }
+    .dhm {
+        &__title {
+            text-align: right;
+            line-height: 1;
+            margin-bottom: unset;
+        }
+    }
+    .were-history,
+    .rannko,
+    .dhm,
+    .iced-tea {
+        margin-top: 5rem;
+        &__description {
+            &-text {
+                line-height: 1.1;
+            }
+        }
+    }
+
+    .adlantern-expanded,
+    .were-history-expanded,
+    .rannko-expanded,
+    .dhm-expanded,
+    .iced-tea-expanded {
+
+        &__items {
+            flex-wrap: wrap;
+
+            & > li:nth-child(odd) {
+                margin-right: 4rem;
+            }
+
+            & > li:nth-child(-n+2) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+// PHONE
+@media only screen and (max-width: 600px) {
+    .header {
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero {
+        width: 65%;
+        &__title {
+            line-height: 1;
+            margin-bottom: unset;
+        }
+    }
+
+    .were-history,
+    .rannko,
+    .dhm,
+    .iced-tea {
+        margin-top: 3rem;
+    }
+
+    .adlantern {
+        padding: 1rem;
+        &__image {
+            margin-bottom: -1rem;
+            &-2 {
+                width: 20rem;
+            }
+            &-1 {
+                width: 5rem;
+            }
+        }
+        &__description {
+            img {
+                width: 15rem;
+                margin-bottom: -1rem;
+            }
+            &-text {
+                margin-left: 0;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .were-history {
+        padding: 1rem;
+        &__description {
+            img {
+                width: 15rem;
+            }
+            &-text {
+                margin-right: 0;
+                font-size: 1.2rem;
+            }
+        }
+        &__image {
+            margin-top: -2rem;
+            margin-bottom: -1rem;
+            img {
+                width: 20rem;
+            }
+        }
+    }
+
+    .rannko {
+        padding: 1rem;
+        &__image {
+            img {
+                width: 20rem;
+            }
+        }
+        &__description {
+            img {
+                width: 15rem;
+            }
+            &-text {
+                margin-left: 0;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .dhm {
+        padding: 1rem;
+        &__description {
+            img {
+                width: 15rem;
+            }
+            &-text {
+                margin-right: 0;
+                font-size: 1.2rem;
+            }
+        }
+        &__title {
+            font-size: 1.5rem;
+        }
+        &__image {
+            img {
+                width: 18rem;
+            }
+        }
+    }
+
+    .iced-tea {
+        padding: 1rem;
+        &__image {
+            img {
+                width: 15rem;
+                margin-right: 1rem;
+            }
+        }
+        &__title {
+                font-size: 1.5rem;
+                text-align: left;
+                line-height: 1;
+                margin-bottom: unset;
+            }
+        &__description {
+            img {
+                width: 15rem;
+            }
+            &-text {
+                margin-left: 0;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .chat {
+        padding: 4rem;
+        &__subheader {
+            line-height: 1;
+        }
+        &__contact {
+            &-link {
+                display: block;
+                padding: 2rem;
+                border-radius: 0;
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .adlantern-expanded,
+    .were-history-expanded,
+    .rannko-expanded,
+    .dhm-expanded,
+    .iced-tea-expanded {
+        padding: 3rem;
+        &__items {
+            display: block;
+            width: 65%;
+            margin: 0 auto;
+
+            & > li {
+                margin-left: unset;
+                margin-bottom: 2rem;
+            }
+
+            & > li:nth-child(odd) {
+                margin-right: unset;
+            }
+
+            & > li:nth-child(-n+2) {
+                margin-bottom: 2rem;;
+            }
+        }
+    }
+
+    
+}
