@@ -8,20 +8,20 @@ $subheader: #b9b9b9;
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
-  box-sizing: border-box;
-  font-family: 'Helvetica', sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 // HEADER
@@ -47,7 +47,6 @@ body {
     }
 
     &__item {
-
         &:not(:last-child) {
             margin-right: 2rem;
         }
@@ -94,539 +93,12 @@ body {
     }
 }
 
-// ADLANTERN
-.adlantern {
-    background-image: linear-gradient(to bottom right, #34679bdb 40%, #34679b 40%);
-    padding: 1rem 6rem;
-
-    &__items {
-        display: flex;
-        list-style: none;
-    }
-
-    &__image {
-        margin-top: -2rem;
-
-        &-1 {
-            width: 11rem;
-            margin-top: 4.5rem;
-            margin-left: -8rem;
-        }
-
-        &-2 {
-            width: 40rem;
-        }
-    }
-
-    &__description {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        img {
-            width: 20rem;
-            margin-bottom: -2rem;
-            margin-top: -2rem;
-        }
-
-        &-text {
-            font-size: 1.6rem;
-            color: $brand-white;
-            margin-left: 1.8rem;
-        }
-    }
-
-    &__see-more {
-        color: $brand-white;
-        margin-top: 1rem;
-        margin-left: 1.7rem;
-        cursor: pointer;
-
-        svg.svg-inline--fa {
-            width: 2em;
-            height: 2em;
-        }
-
-        &:hover {
-            color: #fff;
-        }
-    }
-}
-
-// ADLANTERN EXPANDED
-.adlantern-expanded {
-    display: none;
-    padding: 6rem;
-    background-color: #f3f3f3;
-    -moz-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
-
-    &__items {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        li {
-            margin-left: 4rem;
-        }
-    }
-
-    &__card-image {
-        div {
-            height: 22rem;
-            width: 22rem;
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-            transition: all .2s;
-
-            &:hover {
-                transform: translateY(-3px);
-            }
-        }
-
-        &-1 {
-            background-image: url('../images/adlantern-signup.png');
-            background-size: cover;
-            background-position: center;
-        }
-        &-2 {
-            background-image: url('../images/adlantern-marketing.png');
-            background-size: cover;
-        }
-        &-3 {
-            background-image: url('../images/adlantern-calendar.png');
-            background-size: cover;
-            background-position: center;
-        }
-    }
-
-    &__list {
-        list-style: none;
-        
-        &-item {
-            font-size: 1.2rem;
-            color: $brand-black;
-            text-transform: uppercase;
-
-            &:nth-child(3n) {
-                margin-bottom: 3rem;
-            }
-        }
-
-        &-link {
-            text-decoration: none;
-            color: $brand-black;
-            border: 2px solid $brand-black;
-            display: block;
-            text-align: center;
-            padding: .5rem 0;
-            margin-top: .5rem;
-            transition: all .2s;
-
-            &:hover {
-                background-color: $brand-black;
-                color: #f3f3f3;
-            }
-        }
-    }
-}
-
-// WE'RE HISTORY
-.were-history {
-    margin-top: 1rem;
-    background-image: linear-gradient(to bottom right, #f9f9f9 40%, #ececec 40%);
-    padding: 1rem 6rem;
-
-    &__items {
-        display: flex;
-        justify-content: flex-end;
-        list-style: none;
-    }
-
-    &__description {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        img {
-            width: 30rem;
-        }
-
-        &-text {
-            font-size: 1.6rem;
-            color: #333333ab;
-            margin-right: 1rem;
-            text-align: right;
-        }
-    }
-
-    &__see-more {
-        color: #333333ab;
-        margin-top: 1rem;
-        text-align: right;
-        margin-right: .8rem;
-        cursor: pointer;
-
-        svg.svg-inline--fa {
-            width: 2em;
-            height: 2em;
-        }
-
-        &:hover {
-            color: $brand-black;
-        }
-    }
-
-    &__image {
-        margin-top: -4rem;
-
-        img {
-            width: 35rem;
-        }
-    }
-}
-
-// WERE HISTORY EXPANDED
-.were-history-expanded {
-    display: none;
-    padding: 6rem;
-    background-color: #f3f3f3;
-    -moz-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
-
-    &__items {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        li {
-            margin-left: 4rem;
-        }
-    }
-
-    &__card-image {
-        div {
-            height: 22rem;
-            width: 22rem;
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-            transition: all .2s;
-
-            &:hover {
-                transform: translateY(-3px);
-            }
-        }
-
-        &-1 {
-            background-image: url('../images/wh-section.png');
-            background-size: cover;
-            background-position: center;
-        }
-        &-2 {
-            background-image: url('../images/wh-footer.png');
-            background-size: cover;
-            background-position: center;
-        }
-        &-3 {
-            background-image: url('../images/wh-magazine.png');
-            background-size: contain;
-        }
-    }
-
-    &__list {
-        list-style: none;
-        
-        &-item {
-            font-size: 1.2rem;
-            color: $brand-black;
-            text-transform: uppercase;
-            text-align: right;
-
-            &:nth-child(4n) {
-                margin-bottom: 3rem;
-            }
-        }
-
-        &-link {
-            text-decoration: none;
-            color: $brand-black;
-            border: 2px solid $brand-black;
-            display: block;
-            text-align: center;
-            padding: .5rem 0;
-            margin-top: .5rem;
-            transition: all .2s;
-
-            &:hover {
-                background-color: $brand-black;
-                color: #f3f3f3;
-            }
-        }
-    }
-}
-
-// RANNKO
-.rannko {
-    margin-top: 1rem;
-    background-image: linear-gradient(to bottom right, #1d61ecdb 40%, #1d61ec 40%);
-    padding: 1rem 6rem;
-
-    &__items {
-        display: flex;
-        list-style: none;
-    }
-
-    &__image {
-        margin-top: -2rem;
-
-        img {
-            width: 40rem;
-        }
-    }
-
-    &__description {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        img {
-            width: 20rem;
-            margin-bottom: -.5rem;
-        }
-
-        &-text {
-            font-size: 1.6rem;
-            color: $brand-white;
-            margin-left: .8rem;
-        }
-    }
-
-    &__see-more {
-        color: $brand-white;
-        margin-top: 1rem;
-        margin-left: .8rem;
-        cursor: pointer;
-
-        svg.svg-inline--fa {
-            width: 2em;
-            height: 2em;
-        }
-
-        &:hover {
-            color: #fff;
-        }
-    }
-}
-
-// RANNKO EXPANDED
-.rannko-expanded {
-    display: none;
-    padding: 6rem;
-    background-color: #f3f3f3;
-    -moz-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
-
-    &__items {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        li {
-            margin-left: 4rem;
-        }
-    }
-
-    &__card-image {
-        div {
-            height: 22rem;
-            width: 22rem;
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-            transition: all .2s;
-
-            &:hover {
-                transform: translateY(-3px);
-            }
-        }
-
-        &-1 {
-            background-image: url('../images/adlantern-signup.png');
-            background-size: cover;
-            background-position: center;
-        }
-        &-2 {
-            background-image: url('../images/adlantern-marketing.png');
-            background-size: cover;
-        }
-        &-3 {
-            background-image: url('../images/adlantern-calendar.png');
-            background-size: cover;
-            background-position: center;
-        }
-    }
-
-    &__list {
-        list-style: none;
-        
-        &-item {
-            font-size: 1.2rem;
-            color: $brand-black;
-            text-transform: uppercase;
-
-            &:nth-child(3n) {
-                margin-bottom: 3rem;
-            }
-        }
-
-        &-link {
-            text-decoration: none;
-            color: $brand-black;
-            border: 2px solid $brand-black;
-            display: block;
-            text-align: center;
-            padding: .5rem 0;
-            margin-top: .5rem;
-            transition: all .2s;
-
-            &:hover {
-                background-color: $brand-black;
-                color: #f3f3f3;
-            }
-        }
-    }
-}
-
-// DHM
-.dhm {
-    margin-top: 1rem;
-    background-image: linear-gradient(to bottom right, #f9f9f9 40%, #ececec 40%);
-    padding: 1rem 6rem;
-
-    &__items {
-        display: flex;
-        justify-content: flex-end;
-        list-style: none;
-    }
-    
-    &__description {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        &-text {
-            font-size: 1.6rem;
-            color: #333333ab;
-            text-align: right;
-        }
-    }
-
-    &__see-more {
-        color: #333333ab;
-        margin-top: 1rem;
-        text-align: right;
-        cursor: pointer;
-
-        svg.svg-inline--fa {
-            width: 2em;
-            height: 2em;
-        }
-
-        &:hover {
-            color: $brand-black;
-        }
-    }
-
-    &__title {
-        font-size: 2.8rem;
-        color: $brand-black;
-        margin-bottom: -.5rem;
-    }
-
-    &__image {
-        margin-top: -2rem;
-
-        img {
-            width: 35rem;
-            border: 4px solid #333;
-            padding: 2rem;
-            background-color: #fff;
-            transform: rotate(3deg);
-            margin-left: 4rem;
-        }
-    }
-}
-
-// DHM EXPANDED
-.dhm-expanded {
-    display: none;
-    padding: 6rem;
-    background-color: #f3f3f3;
-    -moz-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
-
-    &__items {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        li {
-            margin-left: 4rem;
-        }
-    }
-
-    &__card-image {
-        div {
-            height: 22rem;
-            width: 22rem;
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-            transition: all .2s;
-
-            &:hover {
-                transform: translateY(-3px);
-            }
-        }
-
-        &-1 {
-            background-image: url('../images/dhm-44panel.jpg');
-            background-size: cover;
-        }
-        &-2 {
-            background-image: url('../images/dhm-halloween.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        &-3 {
-            background-image: url('../images/dhm-book.jpg');
-            background-size: cover;
-        }
-    }
-
-    &__list {
-        list-style: none;
-        
-        &-item {
-            font-size: 1.2rem;
-            color: $brand-black;
-            text-transform: uppercase;
-            text-align: right;
-
-        }
-    }
-}
-
-// ICED TEA & SUNSHINE
+// GLOBAL STYLES
+.adlantern,
+.were-history,
+.rannko,
+.dhm,
 .iced-tea {
-    margin-top: 1rem;
-    background-image: linear-gradient(to bottom right, #81dfe1db 40%, #81dfe1 40%);
     padding: 1rem 6rem;
 
     &__items {
@@ -636,20 +108,6 @@ body {
 
     &__image {
         margin-top: -2rem;
-
-        img {
-            width: 22rem;
-            border: 4px solid $brand-black;
-            transform: rotate(-3deg);
-            margin-right: 6rem;
-        }
-    }
-
-    &__title {
-        font-size: 2.8rem;
-        color: #fff;
-        margin-bottom: -.5rem;
-
     }
 
     &__description {
@@ -658,13 +116,11 @@ body {
         justify-content: center;
 
         &-text {
-            font-size: 1.7rem;
-            color: #fff;
+            font-size: 1.6rem;
         }
     }
 
     &__see-more {
-        color: #fff;
         margin-top: 1rem;
         cursor: pointer;
 
@@ -672,14 +128,13 @@ body {
             width: 2em;
             height: 2em;
         }
-
-        &:hover {
-            color: $brand-white;
-        }
     }
 }
 
-// ICED TEA & SUNSHINE EXPANDED
+.adlantern-expanded,
+.were-history-expanded,
+.rannko-expanded,
+.dhm-expanded,
 .iced-tea-expanded {
     display: none;
     padding: 6rem;
@@ -711,7 +166,340 @@ body {
                 transform: translateY(-3px);
             }
         }
+    }
 
+    &__list {
+        list-style: none;
+
+        &-item {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: $brand-black;
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $brand-black;
+            border: 2px solid $brand-black;
+            display: block;
+            text-align: center;
+            padding: .5rem 0;
+            margin-top: .5rem;
+            transition: all .2s;
+
+            &:hover {
+                background-color: $brand-black;
+                color: #f3f3f3;
+            }
+        }
+    }
+}
+
+// ADLANTERN
+.adlantern {
+    background-image: linear-gradient(to bottom right, #34679bdb 40%, #34679b 40%);
+
+    &__image {
+        &-1 {
+            width: 11rem;
+            margin-top: 4.5rem;
+            margin-left: -8rem;
+        }
+
+        &-2 {
+            width: 40rem;
+        }
+    }
+
+    &__description {
+        img {
+            width: 20rem;
+            margin-bottom: -2rem;
+            margin-top: -2rem;
+        }
+
+        &-text {
+            color: $brand-white;
+            margin-left: 1.8rem;
+        }
+    }
+
+    &__see-more {
+        color: $brand-white;
+        margin-left: 1.7rem;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+// ADLANTERN EXPANDED
+.adlantern-expanded {
+    &__card-image {
+        &-1 {
+            background-image: url('../images/adlantern-signup.png');
+            background-size: cover;
+            background-position: center;
+        }
+        &-2 {
+            background-image: url('../images/adlantern-marketing.png');
+            background-size: cover;
+        }
+        &-3 {
+            background-image: url('../images/adlantern-calendar.png');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &__list {
+        &-item {
+            &:nth-child(3n) {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+// WE'RE HISTORY
+.were-history {
+    margin-top: 1rem;
+    background-image: linear-gradient(to bottom right, #f9f9f9 40%, #ececec 40%);
+
+    &__items {
+        justify-content: flex-end;
+    }
+
+    &__description {
+        img {
+            width: 30rem;
+        }
+
+        &-text {
+            color: #333333ab;
+            margin-right: 1rem;
+            text-align: right;
+        }
+    }
+
+    &__see-more {
+        color: #333333ab;
+        text-align: right;
+        margin-right: .8rem;
+
+        &:hover {
+            color: $brand-black;
+        }
+    }
+
+    &__image {
+        margin-top: -4rem;
+
+        img {
+            width: 35rem;
+        }
+    }
+}
+
+// WERE HISTORY EXPANDED
+.were-history-expanded {
+    &__card-image {
+        &-1 {
+            background-image: url('../images/wh-section.png');
+            background-size: cover;
+            background-position: center;
+        }
+        &-2 {
+            background-image: url('../images/wh-footer.png');
+            background-size: cover;
+            background-position: center;
+        }
+        &-3 {
+            background-image: url('../images/wh-magazine.png');
+            background-size: contain;
+        }
+    }
+
+    &__list {
+        &-item {
+            text-align: right;
+
+            &:nth-child(4n) {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+// RANNKO
+.rannko {
+    margin-top: 1rem;
+    background-image: linear-gradient(to bottom right, #1d61ecdb 40%, #1d61ec 40%);
+
+    &__image {
+        img {
+            width: 40rem;
+        }
+    }
+
+    &__description {
+        img {
+            width: 20rem;
+            margin-bottom: -.5rem;
+        }
+
+        &-text {
+            color: $brand-white;
+            margin-left: .8rem;
+        }
+    }
+
+    &__see-more {
+        color: $brand-white;
+        margin-left: .8rem;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+// RANNKO EXPANDED
+.rannko-expanded {
+    &__card-image {
+        &-1 {
+            background-image: url('../images/adlantern-signup.png');
+            background-size: cover;
+            background-position: center;
+        }
+        &-2 {
+            background-image: url('../images/adlantern-marketing.png');
+            background-size: cover;
+        }
+        &-3 {
+            background-image: url('../images/adlantern-calendar.png');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &__list {
+        &-item {
+            &:nth-child(3n) {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+// DHM
+.dhm {
+    margin-top: 1rem;
+    background-image: linear-gradient(to bottom right, #f9f9f9 40%, #ececec 40%);
+
+    &__items {
+        justify-content: flex-end;
+    }
+    
+    &__description {
+        &-text {
+            color: #333333ab;
+            text-align: right;
+        }
+    }
+
+    &__see-more {
+        color: #333333ab;
+        text-align: right;
+
+        &:hover {
+            color: $brand-black;
+        }
+    }
+
+    &__title {
+        font-size: 2.8rem;
+        color: $brand-black;
+        margin-bottom: -.5rem;
+    }
+
+    &__image {
+        img {
+            width: 35rem;
+            border: 4px solid #333;
+            padding: 2rem;
+            background-color: #fff;
+            transform: rotate(3deg);
+            margin-left: 4rem;
+        }
+    }
+}
+
+// DHM EXPANDED
+.dhm-expanded {
+    &__card-image {
+        &-1 {
+            background-image: url('../images/dhm-44panel.jpg');
+            background-size: cover;
+        }
+        &-2 {
+            background-image: url('../images/dhm-halloween.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        &-3 {
+            background-image: url('../images/dhm-book.jpg');
+            background-size: cover;
+        }
+    }
+
+    &__list {
+        &-item {
+            text-align: right;
+        }
+    }
+}
+
+// ICED TEA & SUNSHINE
+.iced-tea {
+    margin-top: 1rem;
+    background-image: linear-gradient(to bottom right, #81dfe1db 40%, #81dfe1 40%);
+
+    &__image {
+        img {
+            width: 22rem;
+            border: 4px solid $brand-black;
+            transform: rotate(-3deg);
+            margin-right: 6rem;
+        }
+    }
+
+    &__title {
+        font-size: 2.8rem;
+        color: #fff;
+        margin-bottom: -.5rem;
+    }
+
+    &__description {
+        &-text {
+            font-size: 1.7rem;
+            color: #fff;
+        }
+    }
+
+    &__see-more {
+        color: #fff;
+
+        &:hover {
+            color: $brand-white;
+        }
+    }
+}
+
+// ICED TEA & SUNSHINE EXPANDED
+.iced-tea-expanded {
+    &__card-image {
         &-1 {
             background-image: url('../images/its-poster.jpg');
             background-size: cover;
@@ -729,31 +517,9 @@ body {
     }
 
     &__list {
-        list-style: none;
-        
         &-item {
-            font-size: 1.2rem;
-            color: $brand-black;
-            text-transform: uppercase;
-
             &:nth-child(3n) {
                 margin-bottom: 3rem;
-            }
-        }
-
-        &-link {
-            text-decoration: none;
-            color: $brand-black;
-            border: 2px solid $brand-black;
-            display: block;
-            text-align: center;
-            padding: .5rem 0;
-            margin-top: .5rem;
-            transition: all .2s;
-
-            &:hover {
-                background-color: $brand-black;
-                color: #f3f3f3;
             }
         }
     }
@@ -801,7 +567,6 @@ body {
             }
         }
     }
-    
 }
 
 .footer {
@@ -820,7 +585,6 @@ body {
     .rannko-expanded,
     .dhm-expanded,
     .iced-tea-expanded {
-
         &__items {
             li {
                 margin-left: 1rem;
@@ -866,7 +630,6 @@ body {
     .rannko-expanded,
     .dhm-expanded,
     .iced-tea-expanded {
-
         &__items {
             flex-wrap: wrap;
 
@@ -903,8 +666,25 @@ body {
         margin-top: 3rem;
     }
 
-    .adlantern {
+    .adlantern,
+    .were-history,
+    .rannko,
+    .dhm,
+    .iced-tea {
         padding: 1rem;
+
+        &__description {
+            img {
+                width: 15rem;
+            }
+            &-text {
+                margin-left: 0;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .adlantern {
         &__image {
             margin-bottom: -1rem;
             &-2 {
@@ -916,27 +696,12 @@ body {
         }
         &__description {
             img {
-                width: 15rem;
                 margin-bottom: -1rem;
-            }
-            &-text {
-                margin-left: 0;
-                font-size: 1.2rem;
             }
         }
     }
 
     .were-history {
-        padding: 1rem;
-        &__description {
-            img {
-                width: 15rem;
-            }
-            &-text {
-                margin-right: 0;
-                font-size: 1.2rem;
-            }
-        }
         &__image {
             margin-top: -2rem;
             margin-bottom: -1rem;
@@ -947,34 +712,14 @@ body {
     }
 
     .rannko {
-        padding: 1rem;
         &__image {
             img {
                 width: 20rem;
             }
         }
-        &__description {
-            img {
-                width: 15rem;
-            }
-            &-text {
-                margin-left: 0;
-                font-size: 1.2rem;
-            }
-        }
     }
 
     .dhm {
-        padding: 1rem;
-        &__description {
-            img {
-                width: 15rem;
-            }
-            &-text {
-                margin-right: 0;
-                font-size: 1.2rem;
-            }
-        }
         &__title {
             font-size: 1.5rem;
         }
@@ -986,7 +731,6 @@ body {
     }
 
     .iced-tea {
-        padding: 1rem;
         &__image {
             img {
                 width: 15rem;
@@ -994,19 +738,10 @@ body {
             }
         }
         &__title {
-                font-size: 1.5rem;
-                text-align: left;
-                line-height: 1;
-                margin-bottom: unset;
-            }
-        &__description {
-            img {
-                width: 15rem;
-            }
-            &-text {
-                margin-left: 0;
-                font-size: 1.2rem;
-            }
+            font-size: 1.5rem;
+            text-align: left;
+            line-height: 1;
+            margin-bottom: unset;
         }
     }
 
@@ -1053,6 +788,4 @@ body {
             }
         }
     }
-
-    
 }
