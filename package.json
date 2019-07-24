@@ -9,7 +9,6 @@
   "author": "Heather Shar",
   "license": "ISC",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.9.0",
     "node-sass": "^4.12.0"
   }
 }
