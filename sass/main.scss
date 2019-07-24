@@ -369,16 +369,17 @@ body {
 .rannko-expanded {
     &__card-image {
         &-1 {
-            background-image: url('../images/adlantern-signup.png');
+            background-image: url('../images/rannko-analytics.png');
             background-size: cover;
             background-position: center;
         }
         &-2 {
-            background-image: url('../images/adlantern-marketing.png');
+            background-image: url('../images/rannko-screen.png');
             background-size: cover;
+            background-position: center;
         }
         &-3 {
-            background-image: url('../images/adlantern-calendar.png');
+            background-image: url('../images/rannko-charts.png');
             background-size: cover;
             background-position: center;
         }
