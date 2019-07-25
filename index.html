@@ -10,6 +10,8 @@
         <script src="https://kit.fontawesome.com/ad592c19bc.js"></script>
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
         <script src="js/slide.js"></script>
     </head>
 
@@ -61,19 +63,52 @@
         <section id="alExpanded" class="adlantern-expanded">
             <ul class="adlantern-expanded__items">
                 <li>
-                    <a href="images/adlantern-signup.png" target="_blank" class="adlantern-expanded__card-image">
+                    <a href="#adlantern-1" rel="modal:open" class="adlantern-expanded__card-image">
                         <div class="adlantern-expanded__card-image-1"></div>
                     </a>
+                    <div id="adlantern-1" class="modal">
+                        <div class="modal__display">
+                            <img src="images/adlantern-signup.png" alt="Adlantern sign up page">
+                            <div class="modal__description">
+                                <h2 class="modal__title">AdLantern</h2>
+                                <h3 class="modal__subtitle">UI/UX Designer & Front End Developer</h3>
+                                <p class="modal__text">This is the AdLantern sign up page, which I designed using Photoshop and then built as a blade file inside of Laravel Spark. The large background image loads using the blur-up technique, and the page layout is in place thanks to Bootstrap 4 and flexbox. The form is powered by PHP.</p>
+                                <p class="modal__text">Visit <a href="https://adlantern.app/register" target="_blank">AdLantern</a> to check out the live page.</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="images/adlantern-marketing.png" target="_blank" class="adlantern-expanded__card-image">
+                    <a href="#adlantern-2" rel="modal:open" class="adlantern-expanded__card-image">
                         <div class="adlantern-expanded__card-image-2"></div>
                     </a>
+                    <div id="adlantern-2" class="modal">
+                        <div class="modal__display">
+                            <img src="images/adlantern-marketing.png" alt="Adlantern marketing website">
+                            <div class="modal__description">
+                                <h2 class="modal__title">AdLantern</h2>
+                                <h3 class="modal__subtitle">UI/UX Designer & Front End Developer</h3>
+                                <p class="modal__text">This is the AdLantern marketing site, which I designed and built using Wordpress. The layout is built using a combination of Bootstrap 4, flexbox, and CSS grid.</p>
+                                <p class="modal__text">Visit <a href="https://adlantern.com" target="_blank">AdLantern</a> to check out the live page.</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="images/adlantern-calendar.png" target="_blank" class="adlantern-expanded__card-image">
+                    <a href="#adlantern-3" rel="modal:open" class="adlantern-expanded__card-image">
                         <div class="adlantern-expanded__card-image-3"></div>
                     </a>
+                    <div id="adlantern-3" class="modal">
+                        <div class="modal__display">
+                            <img src="images/adlantern-calendar.png" alt="Adlantern calendar feature">
+                            <div class="modal__description">
+                                <h2 class="modal__title">AdLantern</h2>
+                                <h3 class="modal__subtitle">UI/UX Designer & Front End Developer</h3>
+                                <p class="modal__text">This is AdLantern's calendar feature, which allows digital marketers to set budgets for their Google Ads campaigns. The calendar automatically paces out the budgets daily, and allows for custom budgets to be set any day of the month.</p>
+                                <p class="modal__text">The calendar feature is made up of several interacting components built using VueJS inside of Laravel Spark. The layout is in place thanks to Bootstrap 4.</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <ul class="adlantern-expanded__list">
@@ -116,19 +151,51 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="images/wh-section.png" target="_blank" class="were-history-expanded__card-image">
+                    <a href="#wh-1" rel="modal:open" class="were-history-expanded__card-image">
                         <div class="were-history-expanded__card-image-1"></div>
                     </a>
+                    <div id="wh-1" class="modal">
+                        <div class="modal__display">
+                            <img src="images/wh-section.png" alt="We're History section page">
+                            <div class="modal__description">
+                                <h2 class="modal__title">We're History</h2>
+                                <h3 class="modal__subtitle">Designer & Front End Developer</h3>
+                                <p class="modal__text">I did a complete redesign of We're History's Wordpress blog, turning it into an online magazine. I redesigned the logo, layout, and branding using Photoshop. Then, I implemented my changes by adding HTML, CSS, and PHP code to Wordpress.</p>
+                                <p class="modal__text">Visit <a href="http://werehistory.org/category/behind-news/" target="_blank">We're History</a> to check out the live page.</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="images/wh-footer.png" target="_blank" class="were-history-expanded__card-image">
+                    <a href="#wh-2" rel="modal:open" class="were-history-expanded__card-image">
                         <div class="were-history-expanded__card-image-2"></div>
                     </a>
+                    <div id="wh-2" class="modal">
+                        <div class="modal__display">
+                            <img src="images/wh-footer.png" alt="We're History footer">
+                            <div class="modal__description">
+                                <h2 class="modal__title">We're History</h2>
+                                <h3 class="modal__subtitle">Designer & Front End Developer</h3>
+                                <p class="modal__text">I created a custom footer for We're History to replace the stock Wordpress footer they were using before. I used Photoshop to create the design.</p>
+                                <p class="modal__text">Visit <a href="http://werehistory.org" target="_blank">We're History</a> to check it out live.</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="images/wh-magazine.png" target="_blank" class="were-history-expanded__card-image">
+                    <a href="#wh-3" rel="modal:open" class="were-history-expanded__card-image">
                         <div class="were-history-expanded__card-image-3"></div>
                     </a>
+                    <div id="wh-3" class="modal">
+                        <div class="modal__display">
+                            <img src="images/wh-magazine.png" alt="We're History magazine">
+                            <div class="modal__description">
+                                <h2 class="modal__title">We're History</h2>
+                                <h3 class="modal__subtitle">Designer & Front End Developer</h3>
+                                <p class="modal__text">As a surprise for the editors, I created a physical copy of We're History magazine. The magazine includes twelve We're History articles taken from the online site, along with vintage advertisements and recipes. I created the design and layout for the magazine using InDesign, and I created the front and back magazine covers using Photoshop.</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -149,19 +216,50 @@
         <section id="rExpanded" class="rannko-expanded">
             <ul class="rannko-expanded__items">
                 <li>
-                    <a href="images/rannko-analytics.png" target="_blank" class="rannko-expanded__card-image">
+                    <a href="#rannko-1" rel="modal:open" class="rannko-expanded__card-image">
                         <div class="rannko-expanded__card-image-1"></div>
                     </a>
+                    <div id="rannko-1" class="modal">
+                        <div class="modal__display">
+                            <img src="images/rannko-analytics.png" alt="Rannko analytics">
+                            <div class="modal__description">
+                                <h2 class="modal__title">Rannko</h2>
+                                <h3 class="modal__subtitle">UI/UX & Front End Developer</h3>
+                                <p class="modal__text">I created analytics charts for Rannko based on Sketch mockups provided for me. I used ChartJS to create the charts, and each chart is a separate VueJS component built inside of Laravel Spark. For the layout, I used Bootstrap.</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="images/rannko-screen.png" target="_blank" class="rannko-expanded__card-image">
+                    <a href="#rannko-2" rel="modal:open" class="rannko-expanded__card-image">
                         <div class="rannko-expanded__card-image-2"></div>
                     </a>
+                    <div id="rannko-2" class="modal">
+                        <div class="modal__display">
+                            <img src="images/rannko-screen.png" alt="Rannko headquarters screen">
+                            <div class="modal__description">
+                                <h2 class="modal__title">Rannko</h2>
+                                <h3 class="modal__subtitle">UI/UX & Front End Developer</h3>
+                                <p class="modal__text">I built all of the UI for the Rannko Headquarters project, and based it on Sketch mockups provided to me. The layout is done using Tailwind CSS and flexbox, and is made up of separate components built using VueJS inside of Laravel Spark.</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="images/rannko-charts.png" target="_blank" class="rannko-expanded__card-image">
+                    <a href="#rannko-3" rel="modal:open" class="rannko-expanded__card-image">
                         <div class="rannko-expanded__card-image-3"></div>
                     </a>
+                    <div id="rannko-3" class="modal">
+                        <div class="modal__display">
+                            <img src="images/rannko-charts.png" alt="Rannko charts">
+                            <div class="modal__description">
+                                <h2 class="modal__title">Rannko</h2>
+                                <h3 class="modal__subtitle">UI/UX & Front End Developer</h3>
+                                <p class="modal__text">I created analytics charts for Rannko based on Sketch mockups provided for me. I used ChartJS to create the charts, and
+                                each chart is a separate VueJS component built inside of Laravel Spark. For the layout, I used Bootstrap.</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <ul class="rannko-expanded__list">
@@ -184,7 +282,7 @@
                     <span class="dhm__see-more"><i class="far fa-arrow-alt-circle-down see-more"></i></span>
                 </li>
                 <li class="dhm__image">
-                    <img src="images/dhm-logo.webp" alt="Dunedin History Museum logo">
+                    <img src="images/dhm-logo2.png" alt="Dunedin History Museum logo">
                 </li>
             </ul>
         </section>
@@ -200,19 +298,49 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="images/dhm-panel.jpg" target="_blank" class="dhm-expanded__card-image">
+                    <a href="#dhm-1" rel="modal:open" class="dhm-expanded__card-image">
                         <div class="dhm-expanded__card-image-1"></div>
                     </a>
+                    <div id="dhm-1" class="modal">
+                        <div class="modal__display">
+                            <img src="images/dhm-panel.jpg" alt="1944 panel for WW2 exhibit">
+                            <div class="modal__description">
+                                <h2 class="modal__title">Dunedin History Museum</h2>
+                                <h3 class="modal__subtitle">Graphic Designer and Exhibit Designer</h3>
+                                <p class="modal__text">As a graphic designer at DHM, I created all signage for exhibits using Photoshop, and I worked with local print shops to print what I created. This is a panel that was part of a timeline for DHM's "Victorious: Dunedin, Pinellas County, and World War II" exhibit. For this exhibit, I also created other educational materials, promo materials, and designed and installed props, sets, and backdrops.</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="images/dhm-halloween.jpg" target="_blank" class="dhm-expanded__card-image">
+                    <a href="#dhm-2" rel="modal:open" class="dhm-expanded__card-image">
                         <div class="dhm-expanded__card-image-2"></div>
                     </a>
+                    <div id="dhm-2" class="modal">
+                        <div class="modal__display">
+                            <img src="images/dhm-halloween.jpg" alt="Halloween exhibit haunted house">
+                            <div class="modal__description">
+                                <h2 class="modal__title">Dunedin History Museum</h2>
+                                <h3 class="modal__subtitle">Graphic Designer and Exhibit Designer</h3>
+                                <p class="modal__text">This set was a part of one of DHM's annual Halloween exhibits for the community. For the set, I built a wooden frame, created the house out of foam siding, and painted it. The area surrounding the house is filled with dirt, silk leaves, and other props. Green and purple lights shined down on the house.</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="images/dhm-book.jpg" target="_blank" class="dhm-expanded__card-image">
+                    <a href="#dhm-3" rel="modal:open" class="dhm-expanded__card-image">
                         <div class="dhm-expanded__card-image-3"></div>
                     </a>
+                    <div id="dhm-3" class="modal">
+                        <div class="modal__display">
+                            <img src="images/dhm-book.jpg" alt="Pieces of the Past book cover">
+                            <div class="modal__description">
+                                <h2 class="modal__title">Dunedin History Museum</h2>
+                                <h3 class="modal__subtitle">Graphic Designer and Exhibit Designer</h3>
+                                <p class="modal__text">I created "Pieces of the Past: The History of Dunedin in 40 Objects" to highlight some of my favorite artifacts I got to work with at DHM. I photographed each object, removed the backgrounds in Photoshop, and used Photoshop to lay out each page. After writing all of the copy to go along with the objects, I created the front and back covers in Photoshop, and assembled the book as a PDF. I used Blurb to print it. The book is still for sale in DHM's gift shop.</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -233,19 +361,50 @@
         <section id="itsExpanded" class="iced-tea-expanded">
             <ul class="iced-tea-expanded__items">
                 <li>
-                    <a href="images/its-poster.jpg" target="_blank" class="iced-tea-expanded__card-image">
+                    <a href="#its-1" rel="modal:open" class="iced-tea-expanded__card-image">
                         <div class="iced-tea-expanded__card-image-1"></div>
                     </a>
+                    <div id="its-1" class="modal">
+                        <div class="modal__display">
+                            <img src="images/its-poster.jpg" alt="Digital poster">
+                            <div class="modal__description">
+                                <h2 class="modal__title">Iced Tea & Sunshine</h2>
+                                <h3 class="modal__subtitle">Graphic Designer</h3>
+                                <p class="modal__text">Iced Tea & Sunshine was my first brand, and under it, I mostly created graphic designs that I sold from my Etsy store. This digital poster is an example of what I created - inspiration pieces of art that people could buy and print out. My designs were created using Photoshop.</p>
+                                <p class="modal__text">Visit <a href="https://www.etsy.com/listing/193691403/instant-download-inspirational-harry?ref=shop_home_active_19">Iced Tea & Sunshine</a> on Etsy to check out this poster.</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="images/its-logo.jpg" target="_blank" class="iced-tea-expanded__card-image">
+                    <a href="#its-2" rel="modal:open" class="iced-tea-expanded__card-image">
                         <div class="iced-tea-expanded__card-image-2"></div>
                     </a>
+                    <div id="its-2" class="modal">
+                        <div class="modal__display">
+                            <img src="images/its-logo.jpg" alt="Logo design">
+                            <div class="modal__description">
+                                <h2 class="modal__title">Iced Tea & Sunshine</h2>
+                                <h3 class="modal__subtitle">Graphic Designer</h3>
+                                <p class="modal__text">This is just one example of a logo I've created over the last few years. This is AdLantern's secondary logo used on social media sites. I've also created logos for a number of other apps, for DHM and We're History, and more. I create logos using Photoshop, and I have also used Illustrator.</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="images/its-shirt.jpg" target="_blank" class="iced-tea-expanded__card-image">
+                    <a href="#its-3" rel="modal:open" class="iced-tea-expanded__card-image">
                         <div class="iced-tea-expanded__card-image-3"></div>
                     </a>
+                    <div id="its-3" class="modal">
+                        <div class="modal__display">
+                            <img src="images/its-shirt.jpg" alt="T-shirt design">
+                            <div class="modal__description">
+                                <h2 class="modal__title">Iced Tea & Sunshine</h2>
+                                <h3 class="modal__subtitle">Graphic Designer</h3>
+                                <p class="modal__text">This t-shirt was a commissioned design for a group of graduate students at Boston College. I created the design using Photoshop, and used Custom Ink to print the shirts.</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <ul class="iced-tea-expanded__list">
