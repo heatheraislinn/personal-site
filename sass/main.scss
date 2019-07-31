@@ -97,6 +97,7 @@ body {
 }
 
 // GLOBAL STYLES
+.around-world,
 .adlantern,
 .were-history,
 .rannko,
@@ -134,6 +135,7 @@ body {
     }
 }
 
+.around-expanded,
 .adlantern-expanded,
 .were-history-expanded,
 .rannko-expanded,
@@ -245,9 +247,68 @@ body {
     }
 }
 
+// AROUND THE WORLD
+.around-world {
+    background-image: linear-gradient(to bottom right, #333333db 40%, #333 40%);
+
+    &__description {
+        margin-left: 2rem;
+        img {
+            width: 28rem;
+        }
+
+        &-text {
+            color: $brand-white;
+            margin-left: 1.8rem;
+        }
+    }
+
+    &__see-more {
+        color: $brand-white;
+        margin-left: 1.8rem;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &__image {
+        &-1,
+        &-2 {
+            width: 12rem;
+        }
+    }  
+}
+
+// AROUND THE WORLD EXPANDED
+.around-expanded {
+    &__card-image {
+        &-1 {
+            background-image: url('../images/epcot-passport');
+            background-size: cover;
+            background-position: center;
+        }
+        &-2 {
+            background-image: url('../images/epcot-pavilion');
+            background-size: cover;
+            background-position: center;
+        }
+        &-3 {
+            background-image: url('../images/epcot-stamp');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
 // ADLANTERN
 .adlantern {
     background-image: linear-gradient(to bottom right, #34679bdb 40%, #34679b 40%);
+    margin-top: 1rem;
+
+    &__items {
+        justify-content: flex-end;
+    }
 
     &__image {
         &-1 {
@@ -262,6 +323,8 @@ body {
     }
 
     &__description {
+        align-items: flex-end;
+
         img {
             width: 20rem;
             margin-bottom: -2rem;
@@ -270,13 +333,13 @@ body {
 
         &-text {
             color: $brand-white;
-            margin-left: 1.8rem;
+            text-align: right;
         }
     }
 
     &__see-more {
         color: $brand-white;
-        margin-left: 1.7rem;
+        text-align: right;
 
         &:hover {
             color: #fff;
@@ -305,6 +368,8 @@ body {
 
     &__list {
         &-item {
+            text-align: right;
+
             &:nth-child(3n) {
                 margin-bottom: 3rem;
             }
@@ -317,26 +382,22 @@ body {
     margin-top: 1rem;
     background-image: linear-gradient(to bottom right, #f9f9f9 40%, #ececec 40%);
 
-    &__items {
-        justify-content: flex-end;
-    }
-
     &__description {
+        margin-left: 2rem;
+
         img {
             width: 30rem;
         }
 
         &-text {
             color: #333333ab;
-            margin-right: 1rem;
-            text-align: right;
+            margin-left: 1rem;
         }
     }
 
     &__see-more {
         color: #333333ab;
-        text-align: right;
-        margin-right: .8rem;
+        margin-left: .8rem;
 
         &:hover {
             color: $brand-black;
@@ -373,8 +434,6 @@ body {
 
     &__list {
         &-item {
-            text-align: right;
-
             &:nth-child(4n) {
                 margin-bottom: 3rem;
             }
@@ -387,6 +446,10 @@ body {
     margin-top: 1rem;
     background-image: linear-gradient(to bottom right, #1d61ecdb 40%, #1d61ec 40%);
 
+    &__items {
+        justify-content: flex-end;
+    }
+
     &__image {
         img {
             width: 40rem;
@@ -394,6 +457,8 @@ body {
     }
 
     &__description {
+        align-items: flex-end;
+
         img {
             width: 20rem;
             margin-bottom: -.5rem;
@@ -401,13 +466,13 @@ body {
 
         &-text {
             color: $brand-white;
-            margin-left: .8rem;
+            text-align: right;
         }
     }
 
     &__see-more {
         color: $brand-white;
-        margin-left: .8rem;
+        text-align: right;
 
         &:hover {
             color: #fff;
@@ -437,6 +502,8 @@ body {
 
     &__list {
         &-item {
+            text-align: right;
+
             &:nth-child(3n) {
                 margin-bottom: 3rem;
             }
@@ -448,21 +515,17 @@ body {
 .dhm {
     margin-top: 1rem;
     background-image: linear-gradient(to bottom right, #f9f9f9 40%, #ececec 40%);
-
-    &__items {
-        justify-content: flex-end;
-    }
     
     &__description {
+        margin-left: 1.8rem; 
+
         &-text {
             color: #333333ab;
-            text-align: right;
         }
     }
 
     &__see-more {
         color: #333333ab;
-        text-align: right;
 
         &:hover {
             color: $brand-black;
@@ -504,18 +567,16 @@ body {
             background-size: cover;
         }
     }
-
-    &__list {
-        &-item {
-            text-align: right;
-        }
-    }
 }
 
 // ICED TEA & SUNSHINE
 .iced-tea {
     margin-top: 1rem;
     background-image: linear-gradient(to bottom right, #81dfe1db 40%, #81dfe1 40%);
+
+      &__items {
+        justify-content: flex-end;
+    }
 
     &__image {
         img {
@@ -533,14 +594,18 @@ body {
     }
 
     &__description {
+        margin-right: 1.8rem;
+
         &-text {
             font-size: 1.7rem;
             color: #fff;
+            text-align: right;
         }
     }
 
     &__see-more {
         color: #fff;
+        text-align: right;
 
         &:hover {
             color: $brand-white;
@@ -569,6 +634,8 @@ body {
 
     &__list {
         &-item {
+            text-align: right;
+
             &:nth-child(3n) {
                 margin-bottom: 3rem;
             }

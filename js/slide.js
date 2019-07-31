@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    $("#awButton").click(function () {
+        $("#aroundExpanded").slideToggle("slow");
+    });
     $("#alButton").click(function () {
         $("#alExpanded").slideToggle("slow");
     });
