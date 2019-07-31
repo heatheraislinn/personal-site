@@ -523,7 +523,6 @@ body {
     .adlantern__description-text {
       line-height: 1.1; }
   .dhm__title {
-    text-align: right;
     line-height: 1;
     margin-bottom: unset; }
   .were-history,
@@ -598,6 +597,13 @@ body {
     .iced-tea__description-text {
       margin-left: 0;
       font-size: 1.2rem; }
+    .around-world__see-more,
+    .adlantern__see-more,
+    .were-history__see-more,
+    .rannko__see-more,
+    .dhm__see-more,
+    .iced-tea__see-more {
+      margin: 1rem 0; }
   .around-world__image-1, .around-world__image-2 {
     width: 5rem; }
   .adlantern__image {
@@ -616,7 +622,8 @@ body {
   .rannko__image img {
     width: 20rem; }
   .dhm__title {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    text-align: left; }
   .dhm__image img {
     width: 18rem; }
   .iced-tea__image img {
