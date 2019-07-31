@@ -698,6 +698,7 @@ body {
 // MEDIA QUERIES
 // IPAD PRO
 @media only screen and (max-width: 1024px) {
+    .around-expanded,
     .adlantern-expanded,
     .were-history-expanded,
     .rannko-expanded,
@@ -718,6 +719,7 @@ body {
     }
 
     .adlantern {
+        margin-top: 5rem;
         &__description {
             &-text {
                 line-height: 1.1;
@@ -743,6 +745,7 @@ body {
         }
     }
 
+    .around-expanded,
     .adlantern-expanded,
     .were-history-expanded,
     .rannko-expanded,
@@ -788,6 +791,7 @@ body {
         }
     }
 
+    .adlantern,
     .were-history,
     .rannko,
     .dhm,
@@ -795,6 +799,7 @@ body {
         margin-top: 3rem;
     }
 
+    .around-world,
     .adlantern,
     .were-history,
     .rannko,
@@ -809,6 +814,15 @@ body {
             &-text {
                 margin-left: 0;
                 font-size: 1.2rem;
+            }
+        }
+    }
+
+    .around-world {
+        &__image {
+            &-1,
+            &-2 {
+                width: 5rem;
             }
         }
     }
@@ -892,6 +906,7 @@ body {
         }
     }
 
+    .around-expanded,
     .adlantern-expanded,
     .were-history-expanded,
     .rannko-expanded,

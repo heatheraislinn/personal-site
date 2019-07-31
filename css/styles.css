@@ -507,6 +507,7 @@ body {
   font-size: 1.2rem; }
 
 @media only screen and (max-width: 1024px) {
+  .around-expanded__items li,
   .adlantern-expanded__items li,
   .were-history-expanded__items li,
   .rannko-expanded__items li,
@@ -517,8 +518,10 @@ body {
 @media only screen and (max-width: 768px) {
   .hero {
     padding: 8rem 0; }
-  .adlantern__description-text {
-    line-height: 1.1; }
+  .adlantern {
+    margin-top: 5rem; }
+    .adlantern__description-text {
+      line-height: 1.1; }
   .dhm__title {
     text-align: right;
     line-height: 1;
@@ -533,18 +536,21 @@ body {
     .dhm__description-text,
     .iced-tea__description-text {
       line-height: 1.1; }
+  .around-expanded__items,
   .adlantern-expanded__items,
   .were-history-expanded__items,
   .rannko-expanded__items,
   .dhm-expanded__items,
   .iced-tea-expanded__items {
     flex-wrap: wrap; }
+    .around-expanded__items > li:nth-child(odd),
     .adlantern-expanded__items > li:nth-child(odd),
     .were-history-expanded__items > li:nth-child(odd),
     .rannko-expanded__items > li:nth-child(odd),
     .dhm-expanded__items > li:nth-child(odd),
     .iced-tea-expanded__items > li:nth-child(odd) {
       margin-right: 4rem; }
+    .around-expanded__items > li:nth-child(-n+2),
     .adlantern-expanded__items > li:nth-child(-n+2),
     .were-history-expanded__items > li:nth-child(-n+2),
     .rannko-expanded__items > li:nth-child(-n+2),
@@ -564,23 +570,27 @@ body {
     .hero__title {
       line-height: 1;
       margin-bottom: unset; }
+  .adlantern,
   .were-history,
   .rannko,
   .dhm,
   .iced-tea {
     margin-top: 3rem; }
+  .around-world,
   .adlantern,
   .were-history,
   .rannko,
   .dhm,
   .iced-tea {
     padding: 1rem; }
+    .around-world__description img,
     .adlantern__description img,
     .were-history__description img,
     .rannko__description img,
     .dhm__description img,
     .iced-tea__description img {
       width: 15rem; }
+    .around-world__description-text,
     .adlantern__description-text,
     .were-history__description-text,
     .rannko__description-text,
@@ -588,6 +598,8 @@ body {
     .iced-tea__description-text {
       margin-left: 0;
       font-size: 1.2rem; }
+  .around-world__image-1, .around-world__image-2 {
+    width: 5rem; }
   .adlantern__image {
     margin-bottom: -1rem; }
     .adlantern__image-2 {
@@ -626,12 +638,14 @@ body {
       .chat__contact-link:not(:last-child) {
         margin-bottom: 1rem;
         margin-right: 0; }
+  .around-expanded,
   .adlantern-expanded,
   .were-history-expanded,
   .rannko-expanded,
   .dhm-expanded,
   .iced-tea-expanded {
     padding: 3rem; }
+    .around-expanded__items,
     .adlantern-expanded__items,
     .were-history-expanded__items,
     .rannko-expanded__items,
@@ -640,6 +654,7 @@ body {
       display: block;
       width: 65%;
       margin: 0 auto; }
+      .around-expanded__items > li,
       .adlantern-expanded__items > li,
       .were-history-expanded__items > li,
       .rannko-expanded__items > li,
@@ -647,12 +662,14 @@ body {
       .iced-tea-expanded__items > li {
         margin-left: unset;
         margin-bottom: 2rem; }
+      .around-expanded__items > li:nth-child(odd),
       .adlantern-expanded__items > li:nth-child(odd),
       .were-history-expanded__items > li:nth-child(odd),
       .rannko-expanded__items > li:nth-child(odd),
       .dhm-expanded__items > li:nth-child(odd),
       .iced-tea-expanded__items > li:nth-child(odd) {
         margin-right: unset; }
+      .around-expanded__items > li:nth-child(-n+2),
       .adlantern-expanded__items > li:nth-child(-n+2),
       .were-history-expanded__items > li:nth-child(-n+2),
       .rannko-expanded__items > li:nth-child(-n+2),
